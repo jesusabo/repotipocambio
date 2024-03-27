@@ -1,0 +1,31 @@
+version: "3.7"
+services:
+  java_app:
+    build: .
+    image: imagen_tipocambio
+    restart: always
+    ports:
+      - 8080:8091
+    networks:
+      - spring
+    environment:
+      - DATABASE_URL=jdbc:mysql://java_db:3306/tipo_cambio?allowPublicKeyRetrieval=true
+      - DATABASE_USERNAME=root
+      - DATABASE_PASSWORD=L30n0r@2019
+    container_name: contenedor_tipocambio
+    depends_on:
+      - java_db
+
+  java_db:
+    container_name: basedatostiposcambio
+    image: "mysql:8.0"
+    restart: always
+    ports:
+      - 3308:3306
+    environment:
+      MYSQL_DATABASE: tipo_cambio
+      MYSQL_ROOT_PASSWORD: L30n0r@2019
+    networks:
+      - spring
+networks:
+  spring:
