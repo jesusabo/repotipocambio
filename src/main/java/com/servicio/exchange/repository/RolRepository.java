@@ -5,11 +5,11 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.servicio.exchange.entity.TipoCambio;
-
+import com.servicio.exchange.entity.Rol;
 
 @Repository
-public interface TipoCambioRepository extends JpaRepository<TipoCambio, Long>{
+public interface RolRepository extends JpaRepository<Rol, Long>{
+	
+	Optional<Rol> findByName(String name);
 
-	Optional<TipoCambio> findByFromAndTo(String from, String to);
 }

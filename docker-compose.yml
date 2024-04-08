@@ -2,7 +2,7 @@ version: "3.7"
 services:
   java_app:
     build: .
-    image: imagen_tipocambio
+    image: imagen_tipocambio2
     restart: always
     ports:
       - 8080:8091
