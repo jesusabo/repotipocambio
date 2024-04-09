@@ -51,12 +51,14 @@ public class AuthenticationController {
 	
 	@PostMapping("/iniciarSesion")
 	public ResponseEntity<JwtResponseDTO> iniciarSesion(@RequestBody LoginDTO login){
-		log.info("iniciar sesion");
+		log.info("[[ iniciar sesion");
 		Authentication authenticacion = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(login.getUsername(), login.getPassword()));
-		
+		log.info("[[ iniciar sesion [ objeto Authentication construido con valores"+authenticacion);
 		SecurityContextHolder.getContext().setAuthentication(authenticacion);
 		
 		String token = jwtTokenProvider.generarToken(authenticacion);
+		
+		log.info("[[ iniciar sesion [ token"+token);
 		
 		return new ResponseEntity<>(new JwtResponseDTO(token), HttpStatus.OK);
 		
@@ -70,7 +72,7 @@ public class AuthenticationController {
 //			throw new ErrorDatosException(result);
 //		}
 		
-		log.info("Registrar: "+registrar.toString());
+		log.info("[[ registrar usuario: "+registrar.toString());
 		
 		if(usuarioRepository.existsByUsername(registrar.getUsername())) {
 			return new ResponseEntity<String>("Usuario ya se encuentra registrado", HttpStatus.BAD_REQUEST);

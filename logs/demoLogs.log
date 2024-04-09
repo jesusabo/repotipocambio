@@ -1,0 +1,13 @@
+2024-04-09 00:34:12 [restartedMain] INFO  - Starting TipoCambioApplication using Java 11.0.12 on DESKTOP-H2G228D with PID 14692 (D:\ProyectoMicroservicios\Proyectos_Tipo_Cambio\tipo-cambio\target\classes started by jesus in D:\ProyectoMicroservicios\Proyectos_Tipo_Cambio\tipo-cambio)
+2024-04-09 00:34:12 [restartedMain] DEBUG - Running with Spring Boot v2.5.0, Spring v5.3.7
+2024-04-09 00:34:12 [restartedMain] INFO  - No active profile set, falling back to default profiles: default
+2024-04-09 00:34:17 [restartedMain] DEBUG - Filter 'jwtAuthenticationFilter' configured for use
+2024-04-09 00:34:18 [restartedMain] INFO  - Started TipoCambioApplication in 6.674 seconds (JVM running for 9.073)
+2024-04-09 00:34:40 [http-nio-8091-exec-2] INFO  - Token: null
+2024-04-09 00:34:40 [http-nio-8091-exec-2] INFO  - [[ iniciar sesion
+2024-04-09 00:34:41 [http-nio-8091-exec-2] INFO  - [[ iniciar sesion [ objeto Authentication construido con valoresUsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=jesulin18, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2024-04-09 00:34:41 [http-nio-8091-exec-2] INFO  - [[ generarToken
+2024-04-09 00:34:41 [http-nio-8091-exec-2] INFO  - [[ generarToken con username :jesulin18
+2024-04-09 00:34:41 [http-nio-8091-exec-2] INFO  - [[ generarToken con fecha dee expiracion: 09-04-2024 01:34:41
+2024-04-09 00:34:41 [http-nio-8091-exec-2] INFO  - [[ generarToken con valor: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqZXN1bGluMTgiLCJpYXQiOjE3MTI2NDA4ODEsImV4cCI6MTcxMjY0NDQ4MX0.CmuJhZtNaajXkWKpyg25LqBC6bGf6I4_gTxVPJrz-5jnkbcMcXSEF27VXisgHpMD2g0Vu6f2lFJ0I6dERBoOIA
+2024-04-09 00:34:41 [http-nio-8091-exec-2] INFO  - [[ iniciar sesion [ tokeneyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqZXN1bGluMTgiLCJpYXQiOjE3MTI2NDA4ODEsImV4cCI6MTcxMjY0NDQ4MX0.CmuJhZtNaajXkWKpyg25LqBC6bGf6I4_gTxVPJrz-5jnkbcMcXSEF27VXisgHpMD2g0Vu6f2lFJ0I6dERBoOIA

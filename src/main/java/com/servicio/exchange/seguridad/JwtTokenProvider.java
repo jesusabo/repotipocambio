@@ -1,5 +1,6 @@
 package com.servicio.exchange.seguridad;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -23,20 +24,22 @@ public class JwtTokenProvider {
 	private Long jwtExpirationMilliseconds;
 	
 	public String generarToken(Authentication auth) {
-		log.info("Generar Token");
+		log.info("[[ generarToken");
 		String username = auth.getName();
-		
+		log.info("[[ generarToken con username :"+username);
 		Date fecha = new Date();
-		Date fechaExpiracion = new Date(fecha.getTime()+jwtExpirationMilliseconds);
-		
+		String fechaExpiracion1 = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").format(fecha.getTime()+jwtExpirationMilliseconds);
+		Date fechaExpiracion = new Date(fecha.getTime()+ jwtExpirationMilliseconds);
+		log.info("[[ generarToken con fecha dee expiracion: "+fechaExpiracion1);
 		String token = Jwts.builder().setSubject(username).setIssuedAt(new Date()).setExpiration(fechaExpiracion).signWith(SignatureAlgorithm.HS512, jwtSecret).compact();
-		log.info("Generar Token: "+token);
+		log.info("[[ generarToken con valor: "+token);
 		return token;				
 	}
 	
 	public String obtenerUsernameFromToken(String token) {
+		log.info("[[ obtenerUsernameFromToken [ token: "+token);
 		Claims claims = Jwts.parser().setSigningKey(jwtSecret).parseClaimsJws(token).getBody();
-		
+		log.info("[[ obtenerUsernameFromToken [ usuario obtenido : "+claims.getSubject());
 		return claims.getSubject();
 	}
 	
