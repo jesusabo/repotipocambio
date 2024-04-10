@@ -1,13 +1,55 @@
-2024-04-09 00:34:12 [restartedMain] INFO  - Starting TipoCambioApplication using Java 11.0.12 on DESKTOP-H2G228D with PID 14692 (D:\ProyectoMicroservicios\Proyectos_Tipo_Cambio\tipo-cambio\target\classes started by jesus in D:\ProyectoMicroservicios\Proyectos_Tipo_Cambio\tipo-cambio)
-2024-04-09 00:34:12 [restartedMain] DEBUG - Running with Spring Boot v2.5.0, Spring v5.3.7
-2024-04-09 00:34:12 [restartedMain] INFO  - No active profile set, falling back to default profiles: default
-2024-04-09 00:34:17 [restartedMain] DEBUG - Filter 'jwtAuthenticationFilter' configured for use
-2024-04-09 00:34:18 [restartedMain] INFO  - Started TipoCambioApplication in 6.674 seconds (JVM running for 9.073)
-2024-04-09 00:34:40 [http-nio-8091-exec-2] INFO  - Token: null
-2024-04-09 00:34:40 [http-nio-8091-exec-2] INFO  - [[ iniciar sesion
-2024-04-09 00:34:41 [http-nio-8091-exec-2] INFO  - [[ iniciar sesion [ objeto Authentication construido con valoresUsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=jesulin18, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
-2024-04-09 00:34:41 [http-nio-8091-exec-2] INFO  - [[ generarToken
-2024-04-09 00:34:41 [http-nio-8091-exec-2] INFO  - [[ generarToken con username :jesulin18
-2024-04-09 00:34:41 [http-nio-8091-exec-2] INFO  - [[ generarToken con fecha dee expiracion: 09-04-2024 01:34:41
-2024-04-09 00:34:41 [http-nio-8091-exec-2] INFO  - [[ generarToken con valor: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqZXN1bGluMTgiLCJpYXQiOjE3MTI2NDA4ODEsImV4cCI6MTcxMjY0NDQ4MX0.CmuJhZtNaajXkWKpyg25LqBC6bGf6I4_gTxVPJrz-5jnkbcMcXSEF27VXisgHpMD2g0Vu6f2lFJ0I6dERBoOIA
-2024-04-09 00:34:41 [http-nio-8091-exec-2] INFO  - [[ iniciar sesion [ tokeneyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqZXN1bGluMTgiLCJpYXQiOjE3MTI2NDA4ODEsImV4cCI6MTcxMjY0NDQ4MX0.CmuJhZtNaajXkWKpyg25LqBC6bGf6I4_gTxVPJrz-5jnkbcMcXSEF27VXisgHpMD2g0Vu6f2lFJ0I6dERBoOIA
+2024-04-10 10:01:58 [restartedMain] INFO  - Starting TipoCambioApplication using Java 11.0.12 on DESKTOP-H2G228D with PID 6048 (D:\ProyectoMicroservicios\Proyectos_Tipo_Cambio\tipo-cambio\target\classes started by jesus in D:\ProyectoMicroservicios\Proyectos_Tipo_Cambio\tipo-cambio)
+2024-04-10 10:01:58 [restartedMain] DEBUG - Running with Spring Boot v2.5.0, Spring v5.3.7
+2024-04-10 10:01:58 [restartedMain] INFO  - No active profile set, falling back to default profiles: default
+2024-04-10 10:02:04 [restartedMain] DEBUG - Filter 'jwtAuthenticationFilter' configured for use
+2024-04-10 10:02:05 [restartedMain] INFO  - Started TipoCambioApplication in 8.251 seconds (JVM running for 11.023)
+2024-04-10 10:03:34 [http-nio-8091-exec-1] INFO  - Token: null
+2024-04-10 10:03:34 [http-nio-8091-exec-1] INFO  - [[ registrar usuario: RegistrarDTO(name=jesus, username=jesulin, email=jesulin@gmail.com, password=123456, tipo=admin)
+2024-04-10 10:03:52 [http-nio-8091-exec-3] INFO  - Token: null
+2024-04-10 10:03:53 [http-nio-8091-exec-4] INFO  - Token: null
+2024-04-10 10:03:53 [http-nio-8091-exec-6] INFO  - Token: null
+2024-04-10 10:03:53 [http-nio-8091-exec-7] INFO  - Token: null
+2024-04-10 10:03:53 [http-nio-8091-exec-8] INFO  - Token: null
+2024-04-10 10:03:55 [http-nio-8091-exec-9] INFO  - Token: null
+2024-04-10 10:03:55 [http-nio-8091-exec-10] INFO  - Token: null
+2024-04-10 10:03:55 [http-nio-8091-exec-2] INFO  - Token: null
+2024-04-10 10:03:55 [http-nio-8091-exec-1] INFO  - Token: null
+2024-04-10 10:03:55 [http-nio-8091-exec-1] INFO  - Token: null
+2024-04-10 10:03:55 [http-nio-8091-exec-4] INFO  - Token: null
+2024-04-10 10:03:55 [http-nio-8091-exec-5] INFO  - Token: null
+2024-04-10 10:03:55 [http-nio-8091-exec-4] INFO  - Token: null
+2024-04-10 10:03:55 [http-nio-8091-exec-6] INFO  - Token: null
+2024-04-10 10:03:55 [http-nio-8091-exec-7] INFO  - Token: null
+2024-04-10 10:03:55 [http-nio-8091-exec-9] INFO  - Token: null
+2024-04-10 10:03:55 [http-nio-8091-exec-10] INFO  - Token: null
+2024-04-10 10:03:55 [http-nio-8091-exec-1] INFO  - Token: null
+2024-04-10 10:03:55 [http-nio-8091-exec-5] INFO  - Token: null
+2024-04-10 10:03:55 [http-nio-8091-exec-3] INFO  - Token: null
+2024-04-10 10:03:56 [http-nio-8091-exec-8] INFO  - Token: null
+2024-04-10 10:03:56 [http-nio-8091-exec-4] INFO  - Token: null
+2024-04-10 10:03:56 [http-nio-8091-exec-6] INFO  - Token: null
+2024-04-10 10:03:56 [http-nio-8091-exec-9] INFO  - Token: null
+2024-04-10 10:03:56 [http-nio-8091-exec-7] INFO  - Token: null
+2024-04-10 10:03:56 [http-nio-8091-exec-10] INFO  - Token: null
+2024-04-10 10:03:56 [http-nio-8091-exec-3] INFO  - Token: null
+2024-04-10 10:03:56 [http-nio-8091-exec-1] INFO  - Token: null
+2024-04-10 10:03:56 [http-nio-8091-exec-2] INFO  - Token: null
+2024-04-10 10:03:56 [http-nio-8091-exec-8] INFO  - Token: null
+2024-04-10 10:03:56 [http-nio-8091-exec-5] INFO  - Token: null
+2024-04-10 10:03:56 [http-nio-8091-exec-8] INFO  - Token: null
+2024-04-10 10:03:56 [http-nio-8091-exec-6] INFO  - Token: null
+2024-04-10 10:03:56 [http-nio-8091-exec-9] INFO  - Token: null
+2024-04-10 10:03:56 [http-nio-8091-exec-7] INFO  - Token: null
+2024-04-10 10:03:56 [http-nio-8091-exec-10] INFO  - Token: null
+2024-04-10 10:03:56 [http-nio-8091-exec-3] INFO  - Token: null
+2024-04-10 10:04:03 [http-nio-8091-exec-1] INFO  - Token: null
+2024-04-10 10:04:03 [http-nio-8091-exec-4] INFO  - Token: null
+2024-04-10 10:04:03 [http-nio-8091-exec-2] INFO  - Token: null
+2024-04-10 10:04:37 [http-nio-8091-exec-6] INFO  - Token: null
+2024-04-10 10:04:37 [http-nio-8091-exec-6] INFO  - [[ iniciar sesion
+2024-04-10 10:04:37 [http-nio-8091-exec-6] INFO  - [[ iniciar sesion [ objeto Authentication construido con valoresUsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=jesulin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2024-04-10 10:04:37 [http-nio-8091-exec-6] INFO  - [[ generarToken
+2024-04-10 10:04:37 [http-nio-8091-exec-6] INFO  - [[ generarToken con username :jesulin
+2024-04-10 10:04:37 [http-nio-8091-exec-6] INFO  - [[ generarToken con fecha dee expiracion: 10-04-2024 11:04:37
+2024-04-10 10:04:37 [http-nio-8091-exec-6] INFO  - [[ generarToken con valor: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqZXN1bGluIiwiaWF0IjoxNzEyNzYxNDc3LCJleHAiOjE3MTI3NjUwNzd9.P5fAGa7dUeZCcP4u2iv0Ur07nOMpfbdJOL2wEtW480SOQQ1yxFteqOKq1ehzcvcPWN9TRaL_zMcxlyO8GJZYvg
+2024-04-10 10:04:37 [http-nio-8091-exec-6] INFO  - [[ iniciar sesion [ tokeneyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqZXN1bGluIiwiaWF0IjoxNzEyNzYxNDc3LCJleHAiOjE3MTI3NjUwNzd9.P5fAGa7dUeZCcP4u2iv0Ur07nOMpfbdJOL2wEtW480SOQQ1yxFteqOKq1ehzcvcPWN9TRaL_zMcxlyO8GJZYvg

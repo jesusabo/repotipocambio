@@ -1,6 +1,9 @@
 package com.servicio.exchange.controllers;
 
 import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 import javax.validation.Valid;
 
@@ -89,14 +92,17 @@ public class AuthenticationController {
 		usuario.setPassword(passwordEncoder.encode(registrar.getPassword()));
 	
 		Rol rol=null;
-		
 		if(registrar.getTipo().equalsIgnoreCase("admin")) {
 			rol = rolRepository.findByName("ROLE_ADMIN").get();
 		}
-		else {
+		else if(registrar.getTipo().equalsIgnoreCase("user")){
 			rol = rolRepository.findByName("ROLE_USER").get();
+		}else{
+			List<Rol> rolesList = rolRepository.findAll();
+			Set<Rol> rolesSet = new HashSet<>(rolesList);
+			
 		}
-		
+				
 		usuario.setRoles(Collections.singleton(rol));
 		
 		usuarioRepository.save(usuario);
