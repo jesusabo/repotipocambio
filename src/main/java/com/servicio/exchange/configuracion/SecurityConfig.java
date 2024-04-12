@@ -51,10 +51,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 		.and()
 		.authorizeRequests().antMatchers(HttpMethod.GET, "/cambio/**").permitAll()
 		.antMatchers("/auth/**").permitAll()
+		.antMatchers("/h2-console/**").permitAll()
 		.anyRequest().authenticated()
 		.and()
 		.httpBasic();
 		http.addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
+		http.headers().frameOptions().disable();
 	}
 	
 	@Override
