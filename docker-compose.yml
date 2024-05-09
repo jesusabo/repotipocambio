@@ -2,30 +2,40 @@ version: "3.7"
 services:
   java_app:
     build: .
-    image: imagen_tipocambio
+    image: imgencambio
     restart: always
     ports:
       - 8080:8091
     networks:
       - spring
     environment:
-      - DATABASE_URL=jdbc:mysql://java_db:3306/tipo_cambio?allowPublicKeyRetrieval=true
+      - DATABASE_URL=jdbc:mysql://java_db:3306/tipocambio?allowPublicKeyRetrieval=true
       - DATABASE_USERNAME=root
       - DATABASE_PASSWORD=L30n0r@2019
-    container_name: contenedor_tipocambio
+    container_name: contenedor_apptipocambio
     depends_on:
       - java_db
 
   java_db:
-    container_name: basedatostiposcambio
-    image: "mysql:8.0"
+    container_name: contenedor_bdtipocambio
+    image: mysql:8.0
     restart: always
     ports:
       - 3308:3306
     environment:
-      MYSQL_DATABASE: tipo_cambio
+      MYSQL_DATABASE: tipocambio
       MYSQL_ROOT_PASSWORD: L30n0r@2019
     networks:
       - spring
 networks:
   spring:
+#    volumes:
+#      - ./importmysql.sql:/docker-entrypoint-initdb.d/script.sql
+#      - mi-volumen:/var/lib/mysql
+#    command: ["--init-file", "/docker-entrypoint-initdb.d/script.sql"]
+#    networks:
+#      - spring
+#volumes:
+#  mi-volumen:
+#networks:
+#  spring:

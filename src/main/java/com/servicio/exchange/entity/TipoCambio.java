@@ -6,9 +6,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 @Entity
-@Table(name="tipo_camb")
+@Table(name="tipo_camb", uniqueConstraints = @UniqueConstraint(columnNames = {"moneda_origen","moneda_destino"}))
 public class TipoCambio {
 
 	@Id

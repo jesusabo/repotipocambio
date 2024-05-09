@@ -1,5 +1,10 @@
 package com.servicio.exchange.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
 public class RequestDTO {
 	
 	private String monedaOrigen;
@@ -30,6 +35,12 @@ public class RequestDTO {
 
 	public void setTipoCambioNuevo(Double tipoCambioNuevo) {
 		this.tipoCambioNuevo = tipoCambioNuevo;
+	}
+
+	@Override
+	public String toString() {
+		return "RequestDTO [monedaOrigen=" + monedaOrigen + ", monedaDestino=" + monedaDestino + ", tipoCambioNuevo="
+				+ tipoCambioNuevo + "]";
 	}	
 	
 	

@@ -1,5 +1,7 @@
 package com.servicio.exchange.serviceImpl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,6 +23,11 @@ public class TipoCambioServiceImpl implements TipoCambioService{
 	@Override
 	public TipoCambio save(TipoCambio tipoCambio) {
 		return tipoCambioRepository.save(tipoCambio);
+	}
+
+	@Override
+	public List<TipoCambio> findAll() {
+		return tipoCambioRepository.findAll();
 	}
 
 }
